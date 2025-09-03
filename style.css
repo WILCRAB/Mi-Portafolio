@@ -62,7 +62,7 @@ h2 {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
+  border: 3px solid #ffff;
 }
 /* ======= Secciones ======= */
 .section {
@@ -129,3 +129,4 @@ h2 {
 .footer a:hover {
   text-decoration: underline;
 }
+
