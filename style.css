@@ -31,11 +31,31 @@ h2 {
   padding: 2rem 0;
 }
 
-/* ======= Encabezado ======= */
+/* ======= Header con foto ======= */
 .header {
   background: linear-gradient(135deg, #0078d7, #005a9e);
   color: #fff;
   padding: 3rem 1rem;
+  text-align: center;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* permite que elementos bajen en móviles */
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.header-text {
   text-align: center;
 }
 
@@ -50,20 +70,6 @@ h2 {
   font-weight: 300;
 }
 
-.header-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.profile-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffff;
-}
 /* ======= Secciones ======= */
 .section {
   background: #fff;
@@ -130,3 +136,47 @@ h2 {
   text-decoration: underline;
 }
 
+/* ======= Responsividad ======= */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .header-info {
+    flex-direction: column;
+  }
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
