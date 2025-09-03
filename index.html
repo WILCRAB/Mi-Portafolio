@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Williams Quiñajo Fernandez - Desarrollador Web</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Williams Quiñajo Fernandez - Portafolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="header-content">
-            <h1>Williams Quiñajo Fernandez</h1>
-            <p>Desarrollador Web - Soporte técnico</p>
+<header class="header">
+  <div class="header-content">
+    <div class="header-info">
+      <img src="./img/YoFormal.png" alt="Williams Quiñajo Fernandez" class="profile-photo">
+      <div class="header-text">
+        <h1>Williams Quiñajo Fernandez</h1>
+        <p>Desarrollador Web · Soporte Técnico · Redes</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main class="container">
+    <!-- Biografía -->
+    <section id="biografia" class="section">
+      <h2>Sobre Mí</h2>
+      <p>
+        Soy estudiante de Sistemas con gran dedicación en el área de desarrollo y un marcado interés en redes y telecomunicaciones. 
+        Me apasiona aprender y aplicar mis conocimientos en entornos profesionales, especialmente en la configuración de redes 
+        y el soporte técnico. Me considero una persona comprometida, capaz de adaptarse rápidamente a nuevos desafíos y de integrarse 
+        de manera positiva en equipos de trabajo. Busco adquirir experiencia a través de prácticas profesionales que me permitan crecer 
+        tanto en el ámbito técnico como en el personal, aportando iniciativa, responsabilidad y buena disposición para alcanzar los 
+        objetivos planteados.
+      </p>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <h2>Proyectos Realizados</h2>
+      <ul>
+        <li><strong>Gestión de pedidos para restaurante:</strong> Sistema Web desarrollado con Laravel.</li>
+        <li><strong>Sistema de Biblioteca:</strong> Aplicación Web con Laravel para administración de préstamos y usuarios.</li>
+        <li><strong>Automatización de publicaciones en Telegram:</strong> Sistema con Laravel para gestionar publicaciones programadas.</li>
+        <li><strong>Instalación de red LAN y Mikrotik:</strong> Proyecto de cableado y configuración de router para la Unidad Educativa Ingavi-Viacha.</li>
+      </ul>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section">
+      <h2>Habilidades y Conocimientos</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <h3>Lenguajes y Frameworks</h3>
+          <ul>
+            <li>ASP.NET</li>
+            <li>Android</li>
+            <li>Laravel</li>
+            <li>Macros de Excel (VBA)</li>
+          </ul>
         </div>
-    </header>
-
-    <main class="container">
-        <section id="biografia" class="section">
-            <h2>Sobre Mí</h2>
-            <p>Estudiante dedicado en el área de sistemas y Desarrollo con pasión por aprender y aplicar conocimientos técnicos en entornos profesionales. Capaz de adaptarse rápidamente y trabajar en equipo para contribuir al logro de objetivos tecnológicos.</p>
-        </section>
-
-        <section id="proyectos" class="section">
-            <h2>Proyectos Realizados</h2>
-            <ul>
-                <li><strong>Proyecto 1:</strong> Sistema Web Para la gestion de pedidos para un Restaurante con Laravel</li>
-                <li><strong>Proyecto 2:</strong> Sistema Web Para Biblioteca con Laravel</li>
-                <li><strong>Proyecto 3:</strong> Sistema de automatizacion de publicaciones en Telegram con Laravel</li>
-            </ul>
-        </section>
-
-        <section id="habilidades" class="section">
-            <h2>Habilidades y Conocimientos</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Lenguajes y Frameworks</h3>
-                    <ul>
-                        <li>Programación ASP.NET</li>
-                        <li>Programación Android</li>
-                        <li>Macros de Excel (VBA)</li>
-                    </ul>
-                </div>
-                <div class="skill-item">
-                    <h3>Herramientas y Entornos</h3>
-                    <ul>
-                        <li>Desarrollo Colaborativo con Git y GitHub</li>
-                        <li>Administración y Configuración de Servidores</li>
-                        <li>Configuración y Enrutamiento de Redes</li>
-                        <li>Ensamblaje y Mantenimiento de Computadoras</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p><strong>Contacto:</strong></p>
-            <p>Teléfono: 61118909</p>
-            <p>Correo: williams.quifer@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/WILCRAB" target="_blank">WILCRAB</a></p>
+        <div class="skill-item">
+          <h3>Herramientas y Entornos</h3>
+          <ul>
+            <li>Git y GitHub</li>
+            <li>Administración de servidores</li>
+            <li>Configuración de redes</li>
+            <li>Mantenimiento de computadoras</li>
+          </ul>
         </div>
-    </footer>
+        <div class="skill-item">
+          <h3>Redes y Telecomunicaciones</h3>
+          <ul>
+            <li>LAN, WAN y WLAN</li>
+            <li>Routers y switches (Cisco, Mikrotik)</li>
+            <li>TCP/IP, DHCP, DNS, VLAN, VPN</li>
+            <li>Cableado estructurado</li>
+            <li>Diagnóstico y seguridad de redes</li>
+            <li>Windows y Linux básicos</li>
+            <li>Microsoft Office avanzado</li>
+            <li>Resolución de problemas y trabajo en equipo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p><strong>Contacto:</strong></p>
+      <p>Teléfono: 61118909</p>
+      <p>Correo: <a href="mailto:williams.quifer@gmail.com">williams.quifer@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/WILCRAB" target="_blank">WILCRAB</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
